@@ -16,11 +16,10 @@ post http://localhost:8080/api/book with json body as
 ```
 
 2. query
-```
-get http://localhost:8080/api/query?id=306022df37fb44a48f8bcfac75b6b161
+`get http://localhost:8080/api/query?id=306022df37fb44a48f8bcfac75b6b161`
 or 
-get http://localhost:8080/api/query?user=Jen
-```
+`get http://localhost:8080/api/query?user=Jen`
+
 
 3. pickup
 ```
@@ -50,10 +49,10 @@ Download project lib with command `mix deps.get`
 Run the project with command `mix run --no-halt`
 
 ## If you want to access the running project with other shell locally
-1)Start the project with command like `elixir --sname cardeal -S mix run --no-halt`
-2)Open another shell and type command `iex --sname jen --remsh cardeal@<YourHost>`
+1. Start the project with command like `elixir --sname cardeal -S mix run --no-halt`
+2. Open another shell and type command `iex --sname jen --remsh cardeal@<YourHost>`
   e.g. `iex --sname jen --remsh cardeal@JennifersBook`
-3)In the newly opened shell, you can inspect gen_server state with 
+3. In the newly opened shell, you can inspect gen_server state with 
 ```
 iex(cardeal@JennifersBook)1> pid = Process.whereis(CardealApi)
   #PID<0.444.0>
